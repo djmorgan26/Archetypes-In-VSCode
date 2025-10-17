@@ -1,0 +1,5 @@
+// app.txt - initial sample content
+function hello() {
+  return "Hello, World!";
+}
+TODO: add error handling

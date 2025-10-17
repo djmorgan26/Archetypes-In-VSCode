@@ -1,0 +1,43 @@
+{
+  "activeArchetype": "reviewer",
+  "todos": [
+    {
+      "id": "todo-1760739386391-2",
+      "description": "Implement: add error handling",
+      "file": "sample_source/app.txt",
+      "line": 3,
+      "created": "2025-10-17T22:16:26.391Z"
+    }
+  ],
+  "completed": [
+    {
+      "id": "todo-1760739386391-1",
+      "description": "Implement: implement hello function",
+      "file": "sample_source/app.txt",
+      "line": 2,
+      "created": "2025-10-17T22:16:26.391Z",
+      "completedAt": "2025-10-17T22:21:42.759Z",
+      "changes": {
+        "before": "TODO: implement hello function",
+        "after": "function hello() {\n  return \"Hello, World!\";\n}"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review-1760739869721",
+      "timestamp": "2025-10-17T22:24:29.721Z",
+      "task": "Implement: implement hello function",
+      "file": "sample_source/app.txt",
+      "assessment": "Implementation adds 16 characters of new code. Change replaces TODO with functional implementation. Hello function properly implemented with return value.",
+      "concerns": [
+        "No unit tests found for this implementation"
+      ],
+      "recommendations": [
+        "Add unit tests to verify functionality",
+        "Verify edge cases and input validation"
+      ],
+      "verdict": "APPROVED WITH NOTES - Implementation is functional but has minor recommendations"
+    }
+  ]
+}

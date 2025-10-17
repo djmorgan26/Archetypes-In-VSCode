@@ -1,0 +1,48 @@
+{
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "text": "Read .github/copilot-instructions.md for archetype system rules"
+    },
+    {
+      "text": "When user mentions 'planner', 'implementer', or 'reviewer', adopt that archetype's behavior from .vscode/archetypes/"
+    },
+    {
+      "text": "Always check .vscode/state.json to understand current project state and tasks"
+    }
+  ],
+
+  "github.copilot.chat.welcomeMessage": [
+    "**AI Archetype System Active**",
+    "",
+    "Available modes:",
+    "- `/planner` - Plan and break down tasks",
+    "- `/implementer` - Write and modify code",
+    "- `/reviewer` - Review and provide feedback",
+    "",
+    "Type `@workspace /planner`, `/implementer`, or `/reviewer` to activate an archetype.",
+    "",
+    "See `.vscode/copilot-prompts.md` for example prompts."
+  ],
+
+  "files.associations": {
+    ".github/copilot-instructions.md": "markdown",
+    ".vscode/archetypes/*.md": "markdown",
+    ".vscode/state.json": "jsonc",
+    ".vscode/workflow.log": "log"
+  },
+
+  "files.exclude": {
+    ".vscode/review_snapshot.txt": true
+  },
+
+  "search.exclude": {
+    ".vscode/workflow.log": false,
+    ".vscode/state.json": false
+  },
+
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  }
+}
