@@ -9,11 +9,23 @@ Use AI archetypes interactively with GitHub Copilot Chat for intelligent plannin
 
 **See [COPILOT-GUIDE.md](COPILOT-GUIDE.md) for complete instructions.**
 
-Quick start:
+Quick start - Software Development:
 ```
 @workspace /planner Create a plan for [feature]
 @workspace /implementer Implement [task]
 @workspace /reviewer Review [code]
+```
+
+Quick start - Data Engineering:
+```
+@workspace
+Act as SQL Query Crafter - optimize this Snowflake query
+
+@workspace
+Act as Transformation Alchemist - build a PySpark SCD Type 2 pipeline
+
+@workspace
+Act as Pipeline Builder - create ingestion pipeline with retry logic
 ```
 
 ### 2. Standalone Automation (Demo)
@@ -25,11 +37,25 @@ Run automated scripts that simulate archetype behaviors without AI.
 
 ## What This System Does
 
-This project provides a complete archetype-based workflow where:
+This project provides a complete archetype-based workflow with **12 specialized archetypes**:
 
-1. **Planner** analyzes source files, identifies TODOs, and creates actionable task lists
-2. **Implementer** executes tasks from the queue by making concrete code changes
-3. **Reviewer** evaluates completed work and provides quality feedback
+### Software Development Archetypes
+1. **Planner** - Task breakdown and planning
+2. **Implementer** - Code implementation
+3. **Reviewer** - Code review and quality assurance
+
+### Data Engineering Archetypes
+4. **SQL Query Crafter** - Snowflake SQL optimization
+5. **Transformation Alchemist** - PySpark/Scala ETL pipelines
+6. **Pipeline Builder** - Data ingestion with retry logic
+7. **Quality Guardian** - Data quality validation
+8. **Performance Tuner** - Query and Spark optimization
+9. **Pipeline Orchestrator** - Airflow/workflow scheduling
+10. **Automation Scripter** - Bash/PowerShell automation
+11. **Documentation Evangelist** - Technical documentation
+12. **Integration Specialist** - API and external integrations
+
+All archetypes follow the **R.I.S.C.E. Framework** (Role, Input, Style, Constraints, Expected Output) for consistent, high-quality results.
 
 All actions are logged, state is tracked in JSON, and you can verify every step by inspecting the files.
 
