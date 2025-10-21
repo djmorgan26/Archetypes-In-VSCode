@@ -1,0 +1,16 @@
+{
+  "activeArchetype": "requirements-manager",
+  "requirements": {
+    "packages": [
+      {
+        "name": "requests",
+        "version": "2.26.0",
+        "addedAt": "2025-10-21T12:00:00.000Z"
+      }
+    ],
+    "virtualenv": null
+  },
+  "todos": [],
+  "completed": [],
+  "reviews": []
+}

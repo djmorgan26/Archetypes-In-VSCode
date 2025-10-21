@@ -1,0 +1,28 @@
+{
+  "name": "copilot-requirements-agent",
+  "version": "1.0.0",
+  "description": "Requirements Manager agent for GitHub Copilot that handles Python package management through natural language",
+  "type": "module",
+  "main": "bin/cli.js",
+  "bin": {
+    "copilot-requirements-agent": "./bin/cli.js"
+  },
+  "scripts": {
+    "install-agent": "node bin/cli.js install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "copilot",
+    "github-copilot",
+    "python",
+    "requirements",
+    "package-manager",
+    "vscode",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
